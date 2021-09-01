@@ -15,15 +15,18 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
         split_nums = enter_nums.split(' ')
 #assigning num1 and num2
         operator = split_nums[0]
-        num1 = split_nums[1]
-        num2 = split_nums[2]
+        num1 = int(split_nums[1])
+        num2 = int(split_nums[2])
 #         if the first token is "q":
         if operator == "q":
 #             quit
             break
-        if num1 != num1.isdigit() and num 2 != num2.isdigit():
+        #check if operator is valid
+        if operator not in math_options:
+            print("Sorry, not a valid operator.")
+        # if the num parameters for each given operand is not an integer...    
+        if num1 != num1.isdigit() and num2 != num2.isdigit():
             print("Sorry, that's not a valid entry!")
-        # if the num parameters for each given operand is not an integer...
     # A place to store the return value of the math function we call,
     # to give us one clear place where that result is printed.
         result = None
