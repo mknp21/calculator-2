@@ -23,4 +23,6 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
 #        if the first token is 'pow':
         elif split_nums[0] == "+":   
 #            call the power function with the other two tokens
-            result = add(float(num1), float(num2))git
+            result = add(float(num1), float(num2))
+
+        
