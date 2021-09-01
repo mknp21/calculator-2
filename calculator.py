@@ -36,3 +36,5 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
             result = cube(float(num1))
         elif split_nums[0] == "p":
             result = power(float(num1))
+        elif split_nums[0] == "m":
+            result = mod(float(num1), float(num2))
