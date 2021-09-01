@@ -34,3 +34,5 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
             result = square(float(num1))
         elif split_nums[0] == "c":
             result = cube(float(num1))
+        elif split_nums[0] == "p":
+            result = power(float(num1))
