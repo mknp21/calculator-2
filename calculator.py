@@ -13,6 +13,8 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
         enter_nums = input("> ")
 #     tokenize input
         split_nums = enter_nums.split(' ')
+        if split_nums[i] < 3:
+            print("Not a valid input")
 #assigning num1 and num2
         operator = split_nums[0]
         num1 = int(split_nums[1])
