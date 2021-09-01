@@ -14,7 +14,7 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
 #         if the first token is "q":
         if split_nums[0] == "q":
 #             quit
-                break
+            break
 
     # A place to store the return value of the math function we call,
     # to give us one clear place where that result is printed.
@@ -32,3 +32,5 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
             result = divide(float(num1), float(num2))
         elif split_nums[0] == "s":
             result = square(float(num1))
+        elif split_nums[0] == "c":
+            result = cube(float(num1))
