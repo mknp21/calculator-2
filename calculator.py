@@ -26,5 +26,6 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
             result = add(float(num1), float(num2))
         elif split_nums[0] == "-":
             result = subtract(float(num1), float(num2))
-        
+        elif split_nums[0] == "*":
+            result = multiply(float(num1), float(num2))
         
