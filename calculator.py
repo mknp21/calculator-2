@@ -30,3 +30,5 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
             result = multiply(float(num1), float(num2))
         elif split_nums[0] == "/":
             result = divide(float(num1), float(num2))
+        elif split_nums[0] == "s":
+            result = square(float(num1))
