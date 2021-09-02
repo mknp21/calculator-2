@@ -14,13 +14,26 @@ while True:
 #     tokenize input
     split_nums = enter_nums.split(' ')
     if len(split_nums) < 3:
-        print("Not a valid input")  
-    elif len(split_nums) == 2: 
+        num2 = 0
+    if len(split_nums) < 2:
+        print("Enter more inputs!")
+        continue
+    else: 
         num2 = int(split_nums[2])
+        num1 = int(split_nums[1])
+
+    # if 2 < len(split_nums) < 3:
+    #     num1 = 0
+    #     num2 = 0
+    # if len(split_nums) == 3:
+    #     num2 = int(split_nums[2])
+        
+    # if len(split_nums) < 2: 
+    #     print("Not valid input!")
 #assigning num1 and num2
+    
     operator = split_nums[0]
     num1 = int(split_nums[1])
-
 # to give us one clear place where that result is printed.
     result = None
 #         if the first token is "q":
